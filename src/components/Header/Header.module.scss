@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    height: 80px;
+    font-size: 16px;
+    align-items: center;
+}
+.header__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 4px;
+    transition: 0.3s;
+}
+.header__item:hover {
+    border-bottom: 1px solid #838383;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.header__itemText {
+    margin-left: 10px;
+}
