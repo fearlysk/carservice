@@ -2,6 +2,61 @@
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
     background-repeat: no-repeat !important;
-    height: 809px;
+    height: 100vh;
     background-size: cover !important;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 90px auto 0 auto;
+}
+.main__itemHeadline {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 38px;
+    width: 660px;
+    line-height: 46px;
+    background: linear-gradient(117.44deg, #FFFFFF 42.03%, rgba(255, 255, 255, 0) 91.9%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.main__itemDescription {
+    font-size: 20px;
+    width: 85%;
+    margin-top: 25px;
+}
+.main__itemButton {
+    background: linear-gradient(90.17deg, rgba(255, 255, 255, 0.2) 18.02%, rgba(0, 0, 0, 0) 98.31%), #FF2E00;
+    box-shadow: -1px 4px 4px #C34327;
+    border: none;
+    height: 82px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+    transform: skew(-10deg);
+    transition: 0.3s;
+}
+.main__itemButton:hover {
+    background: linear-gradient(90.17deg, rgba(230, 227, 227, 0.2) 18.02%, rgba(42, 41, 41, 0) 98.31%), #ae290b;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.main__itemButtonText {
+    transform: skew(10deg);
+}
+.main__itemCar {
+    margin-top: 60px;
+}
+.main__itemStar {
+    position: relative;
+    width: 9%;
+    top: 8%;
+    left: 7%;
+    z-index: 1;
 }
