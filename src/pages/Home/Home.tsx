@@ -3,8 +3,29 @@ import Car from "../../assets/Home/images/home_car.png";
 import Header from "../../components/Header/Header";
 import styles from "./Home.module.scss";
 import Star from "../../components/UI/Logos/Star/Star";
+import useWindowDimensions from "../../utils/getWindowDimensions";
 
 const Home = () => {
+
+    const { width } = useWindowDimensions();
+
+    const setCarWidth = () => {
+        let carWidth;
+        if( width > 1400 ) {
+          carWidth = 570;
+        } 
+        else if (width > 1150) {
+          carWidth = 510;
+        }
+        else if (width > 800) {
+          carWidth = 450;
+        }
+        else {
+          carWidth = 375;
+        }
+        return carWidth;
+      }
+
     return (
         <div className={styles.wrapper} style={{background: `url(${HomeBackground})`}}>
             <div className={styles.container}>
@@ -18,7 +39,7 @@ const Home = () => {
                     </div>
                     <div className={styles.main__item}>
                         <div className={styles.main__itemCar}>
-                            <img src={Car} alt='No img found'/>
+                            <img src={Car} width={setCarWidth()} alt='No img found'/>
                         </div>
                     </div>
                </div>

@@ -3,6 +3,13 @@ import Marker from "../UI/Logos/Marker/Marker";
 import styles from "./Header.module.scss";
 
 const Header = () => {
+
+    const openBurgerMenu = () => {
+        const burgerMenuBtn = document.getElementsByClassName(styles.header__burger)[0];
+        const changeClass = burgerMenuBtn.classList.toggle(styles.change);
+        return changeClass;
+    }
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.header}>
@@ -19,6 +26,13 @@ const Header = () => {
                 </div>
                 <div className={styles.header__item}>
                     Регистрация/вход
+                </div>
+                <div className={styles.header__item}>
+                    <div className={styles.header__burger} onClick={() => openBurgerMenu()}>
+                        <div className={styles.header__burgerBar1}></div>
+                        <div className={styles.header__burgerBar2}></div>
+                        <div className={styles.header__burgerBar3}></div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
     background-repeat: no-repeat !important;
-    height: 100vh;
+    height: 900px;
     background-size: cover !important;
 }
 .main {
@@ -15,7 +15,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     font-size: 38px;
-    width: 660px;
+    width: 100%;
     line-height: 46px;
     background: linear-gradient(117.44deg, #FFFFFF 42.03%, rgba(255, 255, 255, 0) 91.9%);
     -webkit-background-clip: text;
@@ -36,8 +36,7 @@
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
     margin-top: 10px;
     transform: skew(-10deg);
     transition: 0.3s;
@@ -52,6 +51,69 @@
 }
 .main__itemCar {
     margin-top: 60px;
+}
+@media screen and (max-width: 1134px) {
+    .main__itemCar {
+        display: none;
+    }
+    .main__item:first-child {
+        text-align: center;
+        transform: translateY(15%);
+    }
+    .main__itemHeadline {
+        font-size: 45px;
+        background-color: #FFFFFF;
+        line-height: 55px;
+    }
+    .main__itemDescription {
+        margin: 45px auto 0 auto;
+        font-size: 25px;
+    }
+    .main__itemStar {
+       display: none;
+    }
+    .main__itemButton {
+        margin-top: 60px;
+        padding: 0 60px;
+    }
+}
+@media screen and (max-width: 858px) {
+    .main__item:first-child {
+        transform: translateY(5%);
+    }
+}
+@media screen and (max-width: 600px) {
+    .main__item:first-child {
+        transform: translateY(-4%);
+    }
+    .main__itemHeadline {
+        font-size: 33px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 434px) {
+    .main__itemHeadline {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .main__itemDescription {
+        font-size: 18px;
+    }
+    .main__itemButton {
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 335px) {
+    .main__itemHeadline {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .main__itemDescription {
+        font-size: 15px;
+    }
+    .main__itemButton {
+        padding: 0 20px;
+    }
 }
 .main__itemStar {
     position: relative;
