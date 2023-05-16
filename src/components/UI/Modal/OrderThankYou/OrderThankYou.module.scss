@@ -1,0 +1,90 @@
+@media screen and (max-width: 600px) {
+    .contentItem {
+        font-size: 25px !important;
+    }
+}
+.wrapper {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    height: 300px;
+    background-color: #E77178;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    opacity: 1;
+}
+.content {
+    width: 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+}
+.contentItems {
+  margin-top: -20px;
+}
+.contentItem {
+    font-size: 36px;
+    font-family: 'Open Sans', serif;
+    font-weight: bolder;
+    color: #ffffff;
+}
+.contentItem > p {
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.contentItemText {
+    font-family: 'Open Sans', serif;
+    color: #FFFFFF;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.contentItem > p:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #FFFFFF;
+}
+.animatedHide {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    height: 300px;
+    background-color: #E77178;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    opacity: 1;
+    animation: hideModal 0.3s forwards ease-out;
+}
+@keyframes hideModal {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.closeBtn {
+    position: relative;
+    bottom: 33%;   
+    left: 6%;
+}
+.closeBtn > button {
+    background-color: transparent;
+    padding: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 20%;
+    transition: 0.3s;
+}
+.closeBtn > button:hover {
+    background-color: #b1b1b1;
+    transition: 0.3s;
+    cursor: pointer;
+}

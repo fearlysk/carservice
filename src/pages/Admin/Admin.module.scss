@@ -1,0 +1,27 @@
+.content__item {
+    width: 60%;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f5eff5;
+    margin: 10px 20px;
+}
+.content__itemBtn {
+    margin-top: 5px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    background-color: #E77178;
+    color: #FFFFFF;
+    font-family: 'Open Sans', serif;
+    transition: 0.3s;
+}
+.content__itemBtn:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.main__ordersHeadline {
+    font-family: 'Open Sans', serif;
+    margin-left: 20px;
+}
